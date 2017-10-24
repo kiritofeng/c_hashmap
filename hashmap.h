@@ -16,7 +16,7 @@ struct hashmap {
 
 };
 
-struct node* create_node (int i,void* v,struct node* n) {
+struct node* create_node (int i, void* v, struct node* n) {
     struct node* nd = (struct node*) malloc (sizeof (struct node));
     nd -> key = i;
     nd -> val = v;
