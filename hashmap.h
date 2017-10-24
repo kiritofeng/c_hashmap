@@ -28,7 +28,7 @@ void init_hashmap (struct hashmap* hm) {
     for(int i = 0; i < BUCKETS; hm -> map[i++] = (struct node*) malloc (sizeof (struct node)));
 }
 
-int get_bkt (int key) {
+static int get_bkt (int key) {
     return (key % BUCKETS + BUCKETS) % BUCKETS;
 }
 
