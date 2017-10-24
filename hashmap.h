@@ -17,7 +17,7 @@ struct hashmap {
 };
 
 struct node* create_node (int i,void* v,struct node* n) {
-    struct node* nd = (struct node*) malloc(sizeof(struct node));
+    struct node* nd = (struct node*) malloc (sizeof (struct node));
     nd -> key = i;
     nd -> val = v;
     nd -> nxt = n;
@@ -25,7 +25,7 @@ struct node* create_node (int i,void* v,struct node* n) {
 }
 
 void init_hashmap (struct hashmap* hm) {
-    for(int i = 0; i < BUCKETS; hm -> map[i++] = (struct node*) malloc(sizeof(struct node)));
+    for(int i = 0; i < BUCKETS; hm -> map[i++] = (struct node*) malloc (sizeof (struct node)));
 }
 
 int get_bkt (int key) {
