@@ -57,6 +57,7 @@ void del (struct hashmap* hm, int key) {
         free (tmp);
     }
 }
+
 void delete_hashmap (struct hashmap* hm) {
     for(int i = 0; i < BUCKETS; i++) {
         struct node* tmp;
