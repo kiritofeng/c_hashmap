@@ -1,3 +1,5 @@
+#ifndef KIRITO_HASHMAP
+#define KIRITO_HASHMAP
 #include<stdlib.h>
 #define BUCKETS 100000
 struct hashmap {
@@ -53,3 +55,4 @@ void delete_hashmap(struct hashmap *hm) {
         }
     }
 }
+#endif
